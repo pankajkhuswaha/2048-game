@@ -9,52 +9,41 @@
   <script src="script.js"></script>
 </head>
 
-<body class="text-white">
-
-  <div class="right pt-4 absolute top-0 w-full h-fit xl:w-96 xl:h-full ">
-    <div class="flex w-full h-fit justify-center flex-col items-center ">
-      <h2 class="text-4xl ">2048</h2>
-      <div class="bg-white w-full bar my-4"></div>
-      <div class="w-full p-4 xl:p-10  flex flex-col gap-2">
-        <div class="flex  gap-2 text-lg">
-          <p>Score : </p>
-          <p id="score">0</p>
+<body>
+  <div class="flex justify-center w-full h-full">
+    <div class="flex flex-col  max-sm:w-full   xl:w-1/4 items-center px-20 ">
+      <div class="left my-10 w-full">
+        <div class="flex justify-between gap-4 items-center w-full">
+          <h2 class="title">2048</h2>
+          <div class="flex">
+            <div class="flex">
+              <div class="btn">
+                <p class="pid">SCORE</p>
+                <p id="score" class="text-center">0</p>
+              </div>
+            </div>
+            <div class="flex">
+              <div class="btn">
+                <p class="pid">BEST</p>
+                <p id="score" class="text-center">0000</p>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="flex gap-2 text-lg">
-          <p>Highest Score : </p>
-          <p id="hscore">0</p>
+        <div class="flex gap-6 w-full justify-between ">
+          <p class="game-intro">Join the numbers and get to the <strong>2048 tile!</strong></p>
+          <button class="btn1"> New Game</button>
         </div>
       </div>
-    </div>
-  </div>
-  <div class="main -z-20 bg-gray-900 center">
-    <div id="game-board">
-
-    </div>
-  </div>
-  <div class="left right-0 pt-6 absolute -bottom-40 xl:top-0 w-full h-fit xl:w-96 xl:h-full ">
-    <div class="flex w-full h-fit justify-center flex-col items-center ">
-      <h2 class="text-4xl ">Control / Guide</h2>
-      <div class="bg-white w-full bar my-4"></div>
-      <p class="p-4">2048 is basicalliy a board game in which you have to create 2048 in board by movitng the tiles up , down , left , and right .</p>
-      
-      <div class="w-full flex justify-between px-4 pb-2 items-center">
-        <div class="w-10 h-10 bg-white text-black text-center pt-2 rounded-md ">up</div>
-        <p> Press Arrow Up to move left</p>
+      <div class="main w-full">
+        <div id="game-board">
+    
+        </div>
       </div>
-      <div class="w-full flex justify-between px-4 pb-2 items-center">
-        <div class="w-10 h-10 bg-white text-black text-center pt-2 rounded-md ">up</div>
-        <p> Press Arrow Up to move right</p>
-      </div>
-      <div class="w-full flex justify-between px-4 pb-2 items-center">
-        <div class="w-10 h-10 bg-white text-black text-center pt-2 rounded-md ">up</div>
-        <p> Press Arrow Up to move upward</p>
-      </div>
-      <div class="w-full flex justify-between px-4 pb-2 items-center">
-        <div class="w-10 h-10 bg-white text-black text-center pt-2 rounded-md ">dw</div>
-        <p> Press Arrow Up to move Dowmward</p>
-      </div>
-    </div>
+      <p class="right mt-16">
+        <strong>HOW TO PLAY:</strong> In order to play this game use your <strong>arrow keys</strong> to move the tiles and when two tiles with the same number touch, they <strong>merge into one!</strong> . The merged tile will have the added number of the two previous tiles.
+      </p>
+    </div>  
   </div>
 </body>
 
